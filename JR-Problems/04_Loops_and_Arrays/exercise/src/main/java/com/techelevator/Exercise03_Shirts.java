@@ -17,7 +17,7 @@ public class Exercise03_Shirts {
     buildOrder() → ['S', 'S', 'S', 'M', 'M', 'L']
      */
     public char[] buildOrder() {
-        return new char[] {};    
+        return new char[] {'S','S','S','M','M','L'};
     }
 
     /*
@@ -36,9 +36,26 @@ public class Exercise03_Shirts {
     buildBulkOrder(4) → ['S', 'M', 'L', 'S']
     buildBulkOrder(0) → []
      */
-    public char[] buildBulkOrder(int numberOfShirts) { 
-        return new char[] {};    
+    public char[] buildBulkOrder(int numberOfShirts) {
+        char order[] = new char[numberOfShirts];
+        int num = 0;
+        for (int i = 0; i < numberOfShirts; i++) {
+            num++;
+            if(num == 1){
+                order[i] = 'S';
+            }
+            else if(num == 2){
+                order[i] = 'M';
+            }
+            else if(num == 3){
+                order[i] = 'L';
+                num = 0;
+            }
+        }
+
+        return order;
     }
+
 
     /*
     The warehouse is out of small shirts and will only request more when the
@@ -54,6 +71,11 @@ public class Exercise03_Shirts {
     placeRequest([]) → false
      */
     public boolean placeRequest(char[] order) {
+        for(char orders:order){
+            if(orders == 'S'){
+                return true;
+            }
+        }
         return false; 
     }
 }
