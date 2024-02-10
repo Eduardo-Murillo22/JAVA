@@ -25,7 +25,13 @@ public class Exercise05_Weather {
 	belowFreezing([]) → 0
     */
 	public int belowFreezing(int[] dailyHighs) {
-		return 0;
+        int count = 0;
+        for(int index : dailyHighs){
+            if(index <= 32){
+                count++;
+            }
+        }
+		return count;
 	}
 
     /*
@@ -43,7 +49,13 @@ public class Exercise05_Weather {
 	hottestDay([55]) → 55
     */
     public int hottestDay(int[] dailyHighs) {
-        return 0;
+        int high = -100;
+        for(int index : dailyHighs){
+            if(index > high){
+                high = index;
+            }
+        }
+        return high;
     }
 
     /*
@@ -61,6 +73,18 @@ public class Exercise05_Weather {
 	fixTemperatures([]) → []
      */
     public int[] fixTemperatures(int[] temperatures) {
-        return new int[] {};
+        int count = 0;
+        for (int index : temperatures) {
+            if (count % 2 == 0) {
+//                int temp = 0;
+//                temp = temperatures[count];
+//                temp += 2;
+//                temperatures[count] = temp;
+
+                temperatures[count] += 2;
+            }
+            count++;
+        }
+        return temperatures;
     }
 }
