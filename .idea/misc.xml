@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/JR-Problems/resources/intellij/hello-world/pom.xml" />
+        <option value="$PROJECT_DIR$/JR-Problems/11_Inheritance/exercise/pom.xml" />
+        <option value="$PROJECT_DIR$/JR-Problems/11_Inheritance/tutorial/pom.xml" />
+        <option value="$PROJECT_DIR$/JR-Problems/11_Inheritance/tutorial-final/pom.xml" />
+        <option value="$PROJECT_DIR$/JR-Problems/12_Polymorphism/exercise/pom.xml" />
+        <option value="$PROJECT_DIR$/JR-Problems/12_Polymorphism/tutorial/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
